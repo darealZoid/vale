@@ -58,23 +58,6 @@ body {
   cursor: pointer;
 }
 
-#timer {
-  font-size: 20px;
-  font-style: bold;
-  color: rgb(53, 53, 53);
-  text-align: center;
-}
-
-#countdown-container {
-  border: 2px solid #dfa4ff;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 10px;
-  border-radius: 15px;
-  background-color: #e4c2fa;
-}
-
 #next-btn {
   color: black;
   border: none;
