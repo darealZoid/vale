@@ -101,10 +101,8 @@ body {
 }
 
 .confirmed-container {
-  width: 80%;
   background-color: #ffffff;
-  padding: 20px;
-  margin-top: 20px;
+  margin: 20px 20px 0 20px;
   border-radius: 10px;
   border: 1px solid #c2a4ff;
 }
@@ -126,7 +124,7 @@ body {
 .todos-container {
   display: grid;
   gap: 20px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto;
   padding: 20px;
 }
 
@@ -149,4 +147,18 @@ body {
   flex-direction: column;
   border-bottom: 1px solid #c2a4ff;
   padding-bottom: 20px;
+}
+
+.heart {
+  position: absolute;
+  bottom: -50px; /* Start below screen */
+  color: #ff3366;
+  font-size: 20px;
+  user-select: none;
+  pointer-events: none;
+  animation: floatUp linear forwards;
+}
+@keyframes floatUp {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
 }
