@@ -1,11 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
     <title>Valentine</title>
-</head>
-<body>
-    <p>HII</p>
-</body>
+  </head>
+  <body>
+    <div id="main-content">
+      <div class="msg-container">
+        <p>Mayang, Will you be my Valentine?</p>
+      </div>
+      <video autoplay muted loop width="400">
+        <source src="gif/puss-in.mp4" type="video/mp4" />
+      </video>
+      <div class="btn-container">
+        <a href="yes-yehey.html">
+          <button class="btn" id="yes-btn">Yes</button>
+        </a>
+        <a href="no-yehey.html">
+          <button class="btn" id="no-btn">No</button>
+        </a>
+      </div>
+      <div id="countdown-container">
+        <p style="font-size: 12px; font-weight: bold" class="time-msg">
+          Time Left Until Feb 14 (PH Time)
+        </p>
+        <div id="timer">Loading...</div>
+      </div>
+    </div>
+  </body>
 </html>
