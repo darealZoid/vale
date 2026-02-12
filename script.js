@@ -33,21 +33,24 @@ const x = setInterval(function () {
   }
 }, 1000);
 
-window.addEventListener("load", function () {
-  var preloader = document.getElementById("preloader");
-  var content = document.getElementById("content");
-
-  preloader.style.display = "none";
-
-  content.style.display = "block";
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry) 
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
 });
 
-setTimeout(function () {
-  var preloader = document.getElementById("preloader");
-  var content = document.getElementById("content");
-
-  if (preloader.style.display !== "none") {
-    preloader.style.display = "none";
-    content.style.display = "block";
-  }
-}, 20000);
+const observer2 = new IntersectionObserver((entries2) => {
+    entries2.forEach((entry2) => {
+        console.log(entry2) 
+        if (entry2.isIntersecting) {
+            entry2.target.classList.add('show2');
+        } else {
+            entry2.target.classList.remove('show2');
+        }
+    });
+});
